@@ -1,0 +1,97 @@
+
+
+1. (base) MollyNB:~ molly$ node -v
+	v15.8.0
+
+2. 到專案目錄，安裝 react 範例+元件
+	(base) MollyNB:~ molly$ cd /Users/molly/OneDrive/React/Tuts 
+	(base) MollyNB:Tuts molly$ npx create-react-app dojo-blog
+	Need to install the following packages:
+	  create-react-app
+	Ok to proceed? (y) ==> 按下ENTER, 等待一段時間
+
+	Creating a new React app in /Users/molly/OneDrive/React/Tuts/dojo-blog.
+
+	Installing packages. This might take a couple of minutes.
+	Installing react, react-dom, and react-scripts with cra-template...
+
+
+	added 1934 packages, and audited 1935 packages in 1m
+
+	125 packages are looking for funding
+	  run `npm fund` for details
+
+	found 0 vulnerabilities
+	npm notice 
+	npm notice New patch version of npm available! 7.5.1 -> 7.5.4
+	npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.5.4
+	npm notice Run npm install -g npm@7.5.4 to update!
+	npm notice 
+
+	Initialized a git repository.
+
+	Installing template dependencies using npm...
+
+	added 32 packages, and audited 1967 packages in 7s
+
+	125 packages are looking for funding
+	  run `npm fund` for details
+
+	found 0 vulnerabilities
+	npm notice 
+	npm notice New patch version of npm available! 7.5.1 -> 7.5.4
+	npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.5.4
+	npm notice Run npm install -g npm@7.5.4 to update!
+	npm notice 
+	Removing template package using npm...
+
+
+	removed 1 package, and audited 1966 packages in 3s
+
+	125 packages are looking for funding
+	  run `npm fund` for details
+
+	found 0 vulnerabilities
+	npm notice 
+	npm notice New patch version of npm available! 7.5.1 -> 7.5.4
+	npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.5.4
+	npm notice Run npm install -g npm@7.5.4 to update!
+	npm notice 
+
+	Created git commit.
+
+	Success! Created dojo-blog at /Users/molly/OneDrive/React/Tuts/dojo-blog
+	Inside that directory, you can run several commands:
+
+	  npm start
+	    Starts the development server.
+
+	  npm run build
+	    Bundles the app into static files for production.
+
+	  npm test
+	    Starts the test runner.
+
+	  npm run eject
+	    Removes this tool and copies build dependencies, configuration files
+	    and scripts into the app directory. If you do this, you can’t go back!
+
+	We suggest that you begin by typing:
+
+	  cd dojo-blog
+	  npm start
+
+	Happy hacking!
+	npm notice 
+	npm notice New patch version of npm available! 7.5.1 -> 7.5.4
+	npm notice Changelog: https://github.com/npm/cli/releases/tag/v7.5.4
+	npm notice Run npm install -g npm@7.5.4 to update!
+	npm notice 
+
+
+3. 發現 npm 有更新，順便更新一下
+	sudo npm install -g npm@7.5.4
+
+
+4. 
+
