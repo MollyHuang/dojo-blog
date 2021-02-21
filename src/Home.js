@@ -8,6 +8,8 @@ const Home = () => {
     { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
   ])
 
+  const [name, setName] = useState('mario');
+
   const handleDelete = (id) => {
     const newBlogs = blogs.filter(blog => blog.id !== id);
     setBlogs(newBlogs);
@@ -15,13 +17,17 @@ const Home = () => {
 
   useEffect(() => {
     console.log('use effect ran');
-    console.log(blogs);
-  });   // This would run every time rendering
+    console.log(name);
+  // });   // This would run after every single rendering
+  // }, []);   // This would run once on the first rendering
+  }, [name]);   // This would run once on the first rendering
 
   return (
     <div className="home">
       <h2>Homepage</h2>
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+      <button onClick={() => setName('luigi')}>Change name</button>
+      { name }
     </div>
   );
 }
