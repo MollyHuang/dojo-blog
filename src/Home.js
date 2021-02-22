@@ -3,24 +3,28 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true);
 
   //useEffect(async () => {   // this could wait and sync
   useEffect(() => {
-    fetch ('http://localhost:8000/blogs')
+    setTimeout(() => {
+      fetch('http://localhost:8000/blogs')
       .then(res => {
         return res.json();
       })
       .then(data => {
-        console.log(data);
+        setIsPending(false);
         setBlogs(data);
       })
+    }, 1000);
   }, []);   // This would run once on the first rendering
   // });   // This would run after every single rendering
   // }, []);   // This would run once on the first rendering
 
   return (
     <div className="home">
-      {blogs && <BlogList blogs={blogs} title="All Blogs" />}
+      { isPending && <div>Loading...</div> }
+      { blogs && <BlogList blogs={blogs} title="All Blogs" /> }
     </div>
   );
 }
